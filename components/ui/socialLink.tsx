@@ -5,6 +5,7 @@ interface SocialLink {
   icon: React.ReactNode;
   name: string;
 }
+
 export function SocialLink({ href, icon, name }: SocialLink) {
   return (
     <Link
