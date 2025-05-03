@@ -13,7 +13,7 @@ export function SpiderSpaceLogo({
 }: SpiderSpaceLogo) {
   return (
     <Image
-      src="https://i.ibb.co/hR9zXdLb/Spider-Space-HQ-removebg-preview.png"
+      src="./Spiderspace-01.png"
       alt="Spider Space Logo"
       width={width}
       height={height}
