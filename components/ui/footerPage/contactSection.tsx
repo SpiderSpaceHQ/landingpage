@@ -17,7 +17,7 @@ export function ContactSection() {
           </span>{" "}
           With Us
         </h2>
-        <div className="flex flex-wrap justify-center gap-6 max-w-3xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
           <SocialLink
             href="https://twitter.com/SpiderSpaceHQ"
             icon={<FaXTwitter />}

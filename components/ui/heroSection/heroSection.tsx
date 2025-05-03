@@ -32,7 +32,7 @@ export function HeroSection() {
           size="lg"
           variant="outline"
           className="border-purple-600 text-purple-400 hover:bg-purple-950">
-          <p className="mr-2 h-5 w-5"> View on GitHub </p>
+          View on GitHub
         </Button>
       </div>
     </section>
