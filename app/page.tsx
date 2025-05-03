@@ -1,7 +1,7 @@
-import { HeroSection } from "@/components/ui/heroSection";
-import { HeaderSection } from "@/components/ui/headerSection";
-import { FeaturesSection } from "@/components/ui/featuresSection";
-import { TechStack } from "@/components/ui/techStack";
+import { HeroSection } from "@/components/ui/heroSection/heroSection";
+import { HeaderSection } from "@/components/ui/headerSection/headerSection";
+import { FeaturesSection } from "@/components/ui/featuresSection/featuresSection";
+import { TechStack } from "@/components/ui/techStackArea/techStack";
 import { FooterPage } from "@/components/ui/footerPage/footerPage";
 import { WebBackground } from "@/components/ui/webBackground";
 

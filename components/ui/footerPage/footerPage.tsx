@@ -1,4 +1,4 @@
-import { Footer } from "../footer";
+import { Footer } from "./footer";
 import { CTA_Section } from "./CTA-Section";
 import { ContactSection } from "./contactSection";
 

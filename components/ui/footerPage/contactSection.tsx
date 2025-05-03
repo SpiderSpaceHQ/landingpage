@@ -1,4 +1,4 @@
-import { SocialLink } from "../socialLink";
+import { SocialLink } from "./socialLink";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { FaXTwitter, FaThreads } from "react-icons/fa6";
 import { CiFacebook } from "react-icons/ci";

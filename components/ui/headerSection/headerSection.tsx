@@ -1,6 +1,6 @@
-import { SpiderSpaceLogo } from "./spiderSpaceLogo";
+import { SpiderSpaceLogo } from "../logo/spiderSpaceLogo";
 import Link from "next/link";
-import { Button } from "./button";
+import { Button } from "../button";
 import { Download } from "lucide-react";
 
 export function HeaderSection() {

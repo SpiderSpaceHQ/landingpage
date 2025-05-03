@@ -1,4 +1,4 @@
-import { SpiderSpaceLogo } from "./spiderSpaceLogo";
+import { SpiderSpaceLogo } from "../logo/spiderSpaceLogo";
 
 export function Footer() {
   return (
