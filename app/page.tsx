@@ -1,16 +1,5 @@
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import {
-  Download,
-  Github,
-  Gamepad2,
-  Smartphone,
-  Zap,
-  FolderOpen,
-  RefreshCw,
-  Users
-} from "lucide-react";
-import { SpiderSpaceLogo } from "@/components/ui/spiderSpaceLogo";
+import { Download } from "lucide-react";
 import { SocialLink } from "@/components/ui/socialLink";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { FaXTwitter, FaThreads } from "react-icons/fa6";
@@ -20,6 +9,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { Footer } from "@/components/ui/footer";
 import { HeroSection } from "@/components/ui/heroSection";
 import { HeaderSection } from "@/components/ui/headerSection";
+import { FeaturesSection } from "@/components/ui/featuresSection";
 
 export default function Home() {
   return (
@@ -36,50 +26,7 @@ export default function Home() {
       <HeroSection />
 
       {/* Features Section */}
-      <section
-        id="features"
-        className="relative z-10 bg-black/60 backdrop-blur-sm py-24">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-600">
-              Why Choose
-            </span>{" "}
-            Spider Space?
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <FeatureCard
-              icon={<Gamepad2 className="h-10 w-10 text-purple-500" />}
-              title="All-in-One Emulator Bundle"
-              description="Play games from all major consoles and arcade systems — all in one place."
-            />
-            <FeatureCard
-              icon={<Smartphone className="h-10 w-10 text-purple-500" />}
-              title="Desktop + Mobile"
-              description="Experience true cross-platform freedom. Play on your PC or your smartphone."
-            />
-            <FeatureCard
-              icon={<Zap className="h-10 w-10 text-purple-500" />}
-              title="Cutting-Edge Performance"
-              description="Built for low latency, high FPS, and smooth emulation even on mid-range devices."
-            />
-            <FeatureCard
-              icon={<FolderOpen className="h-10 w-10 text-purple-500" />}
-              title="Smart Game Management"
-              description="Organize, browse, and launch your games easily with an intuitive UI."
-            />
-            <FeatureCard
-              icon={<RefreshCw className="h-10 w-10 text-purple-500" />}
-              title="Regular Updates"
-              description="New emulators, compatibility fixes, and exciting features constantly being spun into the web."
-            />
-            <FeatureCard
-              icon={<Users className="h-10 w-10 text-purple-500" />}
-              title="Community-Driven"
-              description="Open-source spirit with room for contributors, plugin developers, and enthusiasts!"
-            />
-          </div>
-        </div>
-      </section>
+      <FeaturesSection />
 
       {/* Tech Stack Section */}
       <section
@@ -205,18 +152,6 @@ export default function Home() {
   );
 }
 
-function FeatureCard({ icon, title, description }) {
-  return (
-    <div className="bg-purple-950/20 backdrop-blur-sm border border-purple-900/30 rounded-xl p-6 hover:bg-purple-900/30 transition-colors group">
-      <div className="mb-4">{icon}</div>
-      <h3 className="text-xl font-bold mb-2 group-hover:text-purple-400 transition-colors">
-        {title}
-      </h3>
-      <p className="text-gray-300">{description}</p>
-    </div>
-  );
-}
-
 function TechCard({ title, items }) {
   return (
     <div className="bg-purple-950/20 backdrop-blur-sm border border-purple-900/30 rounded-xl p-6">
@@ -234,25 +169,6 @@ function TechCard({ title, items }) {
     </div>
   );
 }
-
-// function SocialLink({ href, icon, name }) {
-//   return (
-//     <Link
-//       href={href}
-//       className="flex flex-col items-center gap-2 p-4 bg-purple-950/20 backdrop-blur-sm border border-purple-900/30 rounded-xl hover:bg-purple-900/30 transition-colors"
-//       target="_blank"
-//       rel="noopener noreferrer">
-//       <Image
-//         src={icon || "/placeholder.svg"}
-//         alt={name}
-//         width={24}
-//         height={24}
-//         className="w-6 h-6"
-//       />
-//       <span className="text-sm">{name}</span>
-//     </Link>
-//   );
-// }
 
 function WebBackground() {
   return (
