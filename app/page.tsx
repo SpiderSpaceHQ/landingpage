@@ -10,6 +10,7 @@ import { Footer } from "@/components/ui/footer";
 import { HeroSection } from "@/components/ui/heroSection";
 import { HeaderSection } from "@/components/ui/headerSection";
 import { FeaturesSection } from "@/components/ui/featuresSection";
+import { TechStack } from "@/components/ui/techStack";
 
 export default function Home() {
   return (
@@ -29,53 +30,7 @@ export default function Home() {
       <FeaturesSection />
 
       {/* Tech Stack Section */}
-      <section
-        id="tech"
-        className="relative z-10 py-24">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-600">
-              Powered
-            </span>{" "}
-            by Modern Tech
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <TechCard
-              title="Frontend"
-              items={[
-                "Tauri (Rust+Webview)",
-                "Electron.js + React.js",
-                "Next.js"
-              ]}
-            />
-            <TechCard
-              title="Mobile"
-              items={[
-                "React Native",
-                "Cross-platform compatibility",
-                "Responsive design"
-              ]}
-            />
-            <TechCard
-              title="Backend Core"
-              items={[
-                "Powered by Rust",
-                "NestJS",
-                "Maximum performance",
-                "Memory safety"
-              ]}
-            />
-            <TechCard
-              title="Emulators"
-              items={[
-                "Curated open-source engines",
-                "Multi-platform support",
-                "Optimized performance"
-              ]}
-            />
-          </div>
-        </div>
-      </section>
+      <TechStack />
 
       {/* CTA Section */}
       <section className="relative z-10 py-24 bg-gradient-to-b from-purple-900/20 to-black">
@@ -148,24 +103,6 @@ export default function Home() {
 
       {/* Footer */}
       <Footer />
-    </div>
-  );
-}
-
-function TechCard({ title, items }) {
-  return (
-    <div className="bg-purple-950/20 backdrop-blur-sm border border-purple-900/30 rounded-xl p-6">
-      <h3 className="text-xl font-bold mb-4 text-purple-400">{title}</h3>
-      <ul className="space-y-2">
-        {items.map((item, index) => (
-          <li
-            key={index}
-            className="flex items-center gap-2">
-            <span className="text-purple-500">•</span>
-            <span>{item}</span>
-          </li>
-        ))}
-      </ul>
     </div>
   );
 }
